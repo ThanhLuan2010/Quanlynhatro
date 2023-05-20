@@ -1,4 +1,4 @@
-# Uber_clone
+# react_native_teamplate
 
 
 
@@ -15,14 +15,14 @@ Already a pro? Just edit this README.md and make it your own. Want to make it ea
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.com/luan_khong_ngu/uber_clone.git
+git remote add origin https://gitlab.com/luan_khong_ngu/react_native_teamplate.git
 git branch -M main
 git push -uf origin main
 ```
 
 ## Integrate with your tools
 
-- [ ] [Set up project integrations](https://gitlab.com/luan_khong_ngu/uber_clone/-/settings/integrations)
+- [ ] [Set up project integrations](https://gitlab.com/luan_khong_ngu/react_native_teamplate/-/settings/integrations)
 
 ## Collaborate with your team
 
