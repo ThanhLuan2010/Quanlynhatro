@@ -12,6 +12,10 @@ import { navigationRef } from "./RootNavigation";
 import { APP_PREFIX, PATH_SCREENS } from "./routes";
 import AddRoom from "@screens/AddRoom";
 import ListRoom from "@screens/ListRoom";
+import RoomDetail from "@screens/RoomDetail";
+import Payment from "@screens/Payment";
+import Bill from "@screens/Bill";
+import BaoCao from "@screens/Baocao";
 
 const Stack = createStackNavigator();
 
@@ -37,6 +41,10 @@ export default function MainContainer() {
               <Stack.Screen name={"HomeView"} component={HomeView} />
               <Stack.Screen name={"AddRoom"} component={AddRoom} />
               <Stack.Screen name={"ListRoom"} component={ListRoom} />
+              <Stack.Screen name={"RoomDetail"} component={RoomDetail} />
+              <Stack.Screen name={"Payment"} component={Payment} />
+              <Stack.Screen name={"Bill"} component={Bill} />
+              <Stack.Screen name={"BaoCao"} component={BaoCao} />
             </>
           ) : (
             <>

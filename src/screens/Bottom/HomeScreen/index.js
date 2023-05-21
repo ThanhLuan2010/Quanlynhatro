@@ -5,11 +5,9 @@ import { height, width } from "@utils/responsive";
 import React from "react";
 import { Pressable, ScrollView } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
-import { useDispatch } from "react-redux";
 import styles from "./styles";
 
 const HomeView = ({ navigation }) => {
-
   const data = [
     {
       title: "Danh sách phòng",
@@ -21,7 +19,7 @@ const HomeView = ({ navigation }) => {
       title: "Báo cáo",
       image: "",
       color: theme.colors.orange,
-      navigate: "AddRoom",
+      navigate: "BaoCao",
     },
     {
       title: "Thêm phòng",
@@ -33,6 +31,18 @@ const HomeView = ({ navigation }) => {
       title: "Danh sách phòng thuê",
       image: "",
       color: theme.colors.blue,
+      navigate: "AddRoom",
+    },
+    {
+      title: "Danh sách người thuê",
+      image: "",
+      color: theme.colors.blue,
+      navigate: "AddRoom",
+    },
+    {
+      title: "Đăng xuất",
+      image: "",
+      color: theme.colors.darkRed,
       navigate: "AddRoom",
     },
   ];
@@ -48,25 +58,14 @@ const HomeView = ({ navigation }) => {
           borderRadius: 20,
           alignItems: "center",
           marginBottom: 40,
+          paddingHorizontal: 20,
         }}
         key={index}
         onPress={() => navigate(item.navigate)}
       >
-        {/* <Block
-          width={(width - 100) / 2}
-          height={(width - 100) / 2}
-          marginHorizontal={20}
-          backgroundColor={item.color}
-          key={index}
-          justifyCenter
-          alignCenter
-          radius={20}
-          marginBottom={40}
-        > */}
         <Text color="white" center>
           {item?.title}
         </Text>
-        {/* </Block> */}
       </Pressable>
     );
   };
